@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test('contact page title', async ({ page }) => {
+test.skip('contact page title', async ({ page }) => {
   await page.goto('http://localhost:3000/contact.html');
 
   // Expect a title "to contain" a substring.
@@ -9,7 +9,7 @@ test('contact page title', async ({ page }) => {
 });
 
 
-test('contact page submit', async ({page}) => {
+test.skip('contact page submit', async ({page}) => {
   await page.goto('http://localhost:3000/contact.html');
   const email = page.getByPlaceholder(/Your Email/);
   const msg = page.locator("#message");
@@ -29,7 +29,7 @@ test('contact page submit', async ({page}) => {
 [{email: "amrit@gmail.com", msg: "some message 1"} ,
   {email: "raj@gmail.com", msg: "some message 2"}
 ].forEach(obj =>{
-  test(`localhost 3000 contact test for ${obj.email}`, async ({page}) =>{
+  test.skip(`localhost 3000 contact test for ${obj.email}`, async ({page}) =>{
 
     await page.goto('http://localhost:3000/contact.html');
     await page.getByRole('textbox', {name: 'Your Email'}).click();

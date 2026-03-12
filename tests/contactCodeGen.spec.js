@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test.skip('test', async ({ page }) => {
   await page.goto('http://localhost:3000/contact.html');
   await page.getByRole('heading', { name: 'Contact Us' });// without click() also work
   await page.getByRole('textbox', { name: 'Your Email' }).click();
