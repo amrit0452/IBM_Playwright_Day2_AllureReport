@@ -1,0 +1,9 @@
+200
+APIResponse: 200 OK
+  X-Powered-By: Express
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 26
+  ETag: W/"1a-iEQ9RXvkycqsT4vWvcdHrxZT8OE"
+  Date: Wed, 18 Mar 2026 09:43:04 GMT
+  Connection: keep-alive
+  Keep-Alive: timeout=5
